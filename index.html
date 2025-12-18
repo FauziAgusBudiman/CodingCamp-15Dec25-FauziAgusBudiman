@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Fauzi Agus Budiman</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        
+        /* Animasi khusus untuk elemen welcome */
+        .fade-in-up {
+            animation: fadeInUp 1s ease-out forwards;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-900">
+
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-white/70 border-b border-slate-100 p-4 md:px-12 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+            <div class="logo shadow-lg ring-2 ring-blue-100 overflow-hidden bg-white">
+                <img src="assets/Profile.jpeg" alt="Fauzi" class="w-full h-full object-cover">
+            </div>
+            <h1 class="font-bold text-xl tracking-tight hidden md:block">Fauzi Agus Budiman</h1>
+        </div>
+
+        <nav class="flex gap-1 md:gap-4">
+            <a class="nav-link-modern" href="#home-page">Home</a>
+            <a class="nav-link-modern" href="#our-profile-page">Our Profile</a>
+            <a class="nav-link-modern" href="#portfolio-page">Portfolio</a>
+            <a class="nav-link-cta" href="#message-us-page">Message Us</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="home-page" class="section hero min-h-screen flex flex-col justify-center items-center text-center px-6 relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl -mr-32 -mt-32"></div>
+            <div class="absolute bottom-0 left-0 w-64 h-64 bg-blue-400/10 rounded-full blur-3xl -ml-20 -mb-20"></div>
+            
+            <div class="relative z-10 fade-in-up">
+                <div class="mb-8 relative inline-block">
+                    <div class="absolute -inset-1.5 bg-gradient-to-r from-blue-400 to-indigo-500 rounded-full blur opacity-70 animate-pulse"></div>
+                    <!-- <div class="relative w-32 h-32 md:w-44 md:h-44 rounded-full border-4 border-white shadow-2xl overflow-hidden bg-slate-200">
+                        <img src="assets/Profile.jpeg" alt="Fauzi Agus Budiman" class="w-full h-full object-cover">
+                    </div> -->
+                </div>
+
+                <h2 class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tighter text-white" id="welcome-speech">Welcome</h2>
+                <p class="text-blue-50 text-lg md:text-xl max-w-2xl opacity-90 leading-relaxed mx-auto font-medium">
+                    Selamat datang di website portofolio saya. Website ini menampilkan profil, karya, dan kemampuan saya di bidang teknologi informasi.
+                </p>
+                
+                <div class="mt-12">
+                    <a href="#portfolio-page" class="bg-white text-blue-600 px-8 py-4 rounded-full font-bold shadow-xl hover:bg-blue-50 transition-all transform hover:scale-105 active:scale-95">
+                        Lihat Karya Saya
+                    </a>
+                </div>
+            </div>
+
+            <div class="absolute bottom-10 animate-bounce">
+                <a href="#our-profile-page" class="text-white/50 hover:text-white transition-colors">
+                    <svg class="w-8 h-8 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                </a>
+            </div>
+        </section>
+
+        <section id="our-profile-page" class="py-28 px-6 md:px-12 bg-white">
+            <div class="max-w-4xl mx-auto">
+                <div class="inline-block px-4 py-1.5 bg-blue-50 text-blue-600 rounded-full text-xs font-bold uppercase tracking-widest mb-6">Mengenal Saya</div>
+                <h2 class="text-4xl md:text-5xl font-bold mb-10 text-slate-900 tracking-tight">Our Profile</h2>
+                <p class="text-lg md:text-2xl text-slate-600 leading-relaxed italic border-l-8 border-blue-500 pl-8 py-2 font-light">
+                    Saya <strong>Fauzi Agus Budiman</strong>, mahasiswa Universitas Suryakancana jurusan Teknik Informatika yang memiliki
+                    ketertarikan besar di bidang pengembangan website. Terbiasa mengerjakan tugas baik secara individu maupun dalam tim,
+                    serta mampu beradaptasi dengan lingkungan kerja yang dinamis.
+                    <br><br>
+                    Selain itu, saya juga memiliki kemampuan editing dasar yang mendukung proses pengembangan konten digital.
+                    Saya memiliki semangat belajar yang tinggi di dunia teknologi informasi.
+                </p>
+            </div>
+        </section>
+
+        <section id="portfolio-page" class="py-28 px-6 md:px-12 bg-slate-50 border-y border-slate-100">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-20">
+                    <h2 class="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight">Portfolio</h2>
+                    <div class="w-24 h-2 bg-blue-600 mx-auto rounded-full"></div>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-10">
+                    <div class="card-modern group">
+                        <div class="p-10">
+                            <div class="w-14 h-14 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 shadow-inner">
+                                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+                            </div>
+                            <h3 class="font-bold text-2xl mb-4 text-slate-800">Sistem Pakar Rekomendasi Jurusan</h3>
+                            <p class="text-slate-500 leading-relaxed text-lg">Aplikasi sistem pakar menggunakan metode Forward Chaining untuk membantu mahasiswa menentukan jurusan.</p>
+                        </div>
+                    </div>
+
+                    <div class="card-modern group">
+                        <div class="p-10">
+                            <div class="w-14 h-14 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-indigo-600 group-hover:text-white transition-all duration-300 shadow-inner">
+                                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                            </div>
+                            <h3 class="font-bold text-2xl mb-4 text-slate-800">Website Perpustakaan</h3>
+                            <p class="text-slate-500 leading-relaxed text-lg">Sistem informasi perpustakaan berbasis web dengan fitur peminjaman dan pengelolaan data.</p>
+                        </div>
+                    </div>
+
+                    <div class="card-modern group">
+                        <div class="p-10">
+                            <div class="w-14 h-14 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-inner">
+                                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                            </div>
+                            <h3 class="font-bold text-2xl mb-4 text-slate-800">Portfolio Website</h3>
+                            <p class="text-slate-500 leading-relaxed text-lg">Website portofolio personal menggunakan HTML, CSS, dan JavaScript secara murni.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="message-us-page" class="py-28 px-6 md:px-12 bg-white">
+            <div class="max-w-xl mx-auto bg-white p-8 md:p-14 rounded-[2rem] shadow-[0_20px_50px_rgba(8,112,184,0.12)] border border-slate-50">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-extrabold mb-3 text-slate-900">Message Us</h2>
+                    <p class="text-slate-500 font-medium">Silakan kirim pesan jika ingin berdiskusi atau bekerja sama.</p>
+                </div>
+
+                <form onsubmit="return validateForm()" class="space-y-6">
+                    <div>
+                        <label class="block text-sm font-bold text-slate-700 mb-2 ml-1">Nama Lengkap</label>
+                        <input class="w-full p-4 bg-slate-50 border border-slate-100 rounded-2xl focus:ring-4 focus:ring-blue-100 focus:bg-white focus:border-blue-500 transition-all outline-none" type="text" id="name" placeholder="Fauzi Agus Budiman" required>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-slate-700 mb-2 ml-1">Alamat Email</label>
+                        <input class="w-full p-4 bg-slate-50 border border-slate-100 rounded-2xl focus:ring-4 focus:ring-blue-100 focus:bg-white focus:border-blue-500 transition-all outline-none" type="email" id="email" placeholder="nama@email.com" required>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-slate-700 mb-2 ml-1">Pesan</label>
+                        <textarea class="w-full p-4 bg-slate-50 border border-slate-100 rounded-2xl focus:ring-4 focus:ring-blue-100 focus:bg-white focus:border-blue-500 transition-all outline-none" id="message" rows="4" placeholder="Halo Fauzi, saya ingin bertanya..." required></textarea>
+                    </div>
+                    <button class="w-full bg-blue-600 text-white font-extrabold py-5 rounded-2xl hover:bg-blue-700 hover:shadow-2xl hover:shadow-blue-200 transition-all transform hover:-translate-y-1 active:translate-y-0">
+                        Kirim Pesan Sekarang
+                    </button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center py-12 bg-slate-950 text-slate-500">
+        <div class="max-w-6xl mx-auto px-6">
+            <p class="text-xs tracking-[0.3em] uppercase font-bold">© 2025 Fauzi Agus Budiman</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
